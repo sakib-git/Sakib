@@ -3,7 +3,7 @@ import React from 'react';
 import img from '../assets/Sakib_pp.png'
 export default function Hero() {
   return (
-<div>
+<div id='home'>
         <div className="absolute inset-0 z-0 opacity-[0.03]" 
            style={{ backgroundImage: `linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)`, 
            backgroundSize: '40px 40px' }}>
@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="space-y-8 animate-fadeIn">
           <div className="space-y-4">
             <h2 className="text-blue-600 font-semibold tracking-wide uppercase text-sm">
-              Welcome to my portfolio
+         Available for opportunities
             </h2>
             <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight text-slate-900">
               Hi, I'm <br />
