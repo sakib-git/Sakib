@@ -9,13 +9,13 @@ const Contact = () => {
       link: 'https://www.linkedin.com/in/sakibofficial-webdev/',
       color: 'hover:bg-[#0A66C2]',
    
-       // Linkedin blue
+       
     },
     {
       id: 1,
       icon: <FaFacebookF />,
       link: 'https://www.facebook.com/sakibofficial.webdev/',
-      color: 'hover:bg-[#1877F2]', // Facebook blue
+      color: 'hover:bg-[#1877F2]', 
     },
     {
       id: 2,
@@ -25,6 +25,11 @@ const Contact = () => {
     },
     
   ];
+
+  const handleSubmit = (e) => {
+  e.preventDefault(); 
+  console.log("Form submitted");
+};
   return (
     <section id="contact" className="relative px-6 md:px-12 py-24 bg-slate-50/30 overflow-hidden">
       {/* Background Grid Pattern */}
@@ -80,7 +85,7 @@ const Contact = () => {
 
           {/* Right Side: Contact Form */}
           <div className="bg-white p-10 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.04)] border border-slate-50">
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-slate-700 ml-1">Name</label>
@@ -102,7 +107,7 @@ const Contact = () => {
                 <textarea rows="4" placeholder="How can I help you?" className="w-full px-6 py-4 bg-slate-50 border-none rounded-2xl focus:ring-2 focus:ring-blue-500/20 outline-none transition-all placeholder:text-slate-300 resize-none"></textarea>
               </div>
 
-              <button className="w-full py-5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-2xl font-bold shadow-lg shadow-blue-200 hover:shadow-blue-300 hover:-translate-y-0.5 transition-all active:scale-[0.98]">Send Message</button>
+              <button type='submit' className="w-full py-5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-2xl font-bold shadow-lg shadow-blue-200 hover:shadow-blue-300 hover:-translate-y-0.5 transition-all active:scale-[0.98]">Send Message</button>
             </form>
           </div>
         </div>

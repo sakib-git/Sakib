@@ -4,3 +4,9 @@
 body {
   font-family: 'Inter', system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+@media (pointer: fine) {
+  button {
+    cursor: pointer;
+  }
+}
