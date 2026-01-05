@@ -7,7 +7,9 @@ const Contact = () => {
       id: 3,
       icon: <FaLinkedinIn />,
       link: 'https://www.linkedin.com/in/sakibofficial-webdev/',
-      color: 'hover:bg-[#0A66C2]', // Linkedin blue
+      color: 'hover:bg-[#0A66C2]',
+   
+       // Linkedin blue
     },
     {
       id: 1,
@@ -66,9 +68,9 @@ const Contact = () => {
             {/* Social Links */}
             <div className="pt-6 border-t border-slate-50">
               <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Follow Me</p>
-              <div className="flex gap-5 p-4">
+              <div className="flex gap-5 p-4 ">
                 {socialData.map((item) => (
-                  <a key={item.id} href={item.link} target="_blank" rel="noopener noreferrer" className={`flex items-center justify-center w-10 h-10 rounded-full border border-gray-300 text-gray-600 transition-all duration-300 hover:text-white hover:border-transparent ${item.color} shadow-sm hover:shadow-lg transform hover:-translate-y-1`}>
+                  <a key={item.id} href={item.link} target="_blank" rel="noopener noreferrer"  className={`flex items-center justify-center w-10 h-10 rounded-full border border-gray-300 text-gray-600 transition-all duration-300 hover:text-white hover:border-transparent ${item.color} shadow-sm hover:shadow-lg transform hover:-translate-y-1 `} >
                     {item.icon}
                   </a>
                 ))}
