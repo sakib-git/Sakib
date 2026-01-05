@@ -1,6 +1,7 @@
 import React from 'react';
 import pR from '../assets/public-report.png';
 import bill from '../assets/bill.png';
+import toy from '../assets/toy.png';
 const Project = () => {
   const projects = [
     {
@@ -21,15 +22,15 @@ const Project = () => {
       liveLink: 'https://paybills-assignment-10-0010.vercel.app/',
       repoLink: 'https://github.com/sakib-git/Bill-Management',
     },
-    // {
-    //   title: 'Weather Forecast SaaS',
-    //   desc: 'A weather tracking application providing 7-day forecasts and historical data visualization with APIs.',
-    //   tags: ['React.js', 'tailwind', ],
-    //   colors: 'bg-orange-50 text-orange-600',
-    //   icon: img,
-    //   liveLink: '',
-    //   repoLink: '',
-    // },
+    {
+      title: 'App Store',
+      desc: 'This Demo App Store website was created for an academic assignment and features a modern, responsive layout where users can browse a collection of apps.',
+      tags: ['React.js', 'tailwind', ],
+      colors: 'bg-orange-50 text-orange-600',
+      icon: toy,
+      liveLink: 'https://assignment-08-eta-six.vercel.app/',
+      repoLink: 'https://github.com/sakib-git/App-Store-',
+    },
   ];
 
   return (
