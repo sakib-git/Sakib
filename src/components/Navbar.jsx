@@ -7,7 +7,7 @@ const Navbar = () => {
 
      <nav className="fixed w-full top-0 left-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 ">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <h1>sakib</h1>
+     
         <div className="flex justify-between items-center h-20">
           {/* Logo Name */}
           <div className="flex-shrink-0">
