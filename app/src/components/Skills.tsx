@@ -7,7 +7,7 @@ const Skills = () => {
       icon: "code", // < > icon
       color: "text-cyan-500",
       bgColor: "bg-cyan-50",
-      skills: ["TypeScript", "React.js ", "JavaScript", "Tailwind CSS", "HTML5"]
+      skills: ["TypeScript", "Next.js","React.js ", "JavaScript", "Tailwind CSS", "HTML5"]
     },
     {
       title: "Backend",
